@@ -1,0 +1,44 @@
+@options
+@packages
+--class-path
+'C:/code/java/labworks/labs/target/classes;C:/code/java/labworks/labs/target/test-classes;C:/Users/JudeKwofie/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar'
+-encoding
+'UTF-8'
+-public
+--release
+17
+-sourcepath
+'C:/code/java/labworks/labs/src/test/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/code/java/labworks/labs/target/site/testapidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'labs 1.0-SNAPSHOT Test API'
+-use
+-version
+-windowtitle
+'labs 1.0-SNAPSHOT Test API'
+com.jude
+C:\code\java\labworks\labs\src\test\java = 1715780869504
+C:\code\java\labworks\labs\target\site\testapidocs\allclasses-index.html = 1715782600618
+C:\code\java\labworks\labs\target\site\testapidocs\allpackages-index.html = 1715782600621
+C:\code\java\labworks\labs\target\site\testapidocs\element-list = 1715782600572
+C:\code\java\labworks\labs\target\site\testapidocs\help-doc.html = 1715782600647
+C:\code\java\labworks\labs\target\site\testapidocs\index-all.html = 1715782600638
+C:\code\java\labworks\labs\target\site\testapidocs\index.html = 1715782600641
+C:\code\java\labworks\labs\target\site\testapidocs\jquery-ui.overrides.css = 1715782600666
+C:\code\java\labworks\labs\target\site\testapidocs\member-search-index.js = 1715782600627
+C:\code\java\labworks\labs\target\site\testapidocs\module-search-index.js = 1715782600623
+C:\code\java\labworks\labs\target\site\testapidocs\overview-tree.html = 1715782600606
+C:\code\java\labworks\labs\target\site\testapidocs\package-search-index.js = 1715782600625
+C:\code\java\labworks\labs\target\site\testapidocs\script.js = 1715782600652
+C:\code\java\labworks\labs\target\site\testapidocs\search.js = 1715782600655
+C:\code\java\labworks\labs\target\site\testapidocs\stylesheet.css = 1715782600650
+C:\code\java\labworks\labs\target\site\testapidocs\tag-search-index.js = 1715782600628
+C:\code\java\labworks\labs\target\site\testapidocs\type-search-index.js = 1715782600626
