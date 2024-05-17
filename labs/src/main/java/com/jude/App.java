@@ -1,7 +1,6 @@
 package com.jude;
 
 import com.jude.linkedlist.ILinkedList;
-import com.jude.linkedlist.IntegerLinkedList;
 
 /**
  * Hello world!

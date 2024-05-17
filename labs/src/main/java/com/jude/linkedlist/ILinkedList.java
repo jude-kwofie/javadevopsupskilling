@@ -43,89 +43,116 @@ public class ILinkedList {
             this.next = null;
         }
     }
-    public void prepend(int value){
-        //create a link
+    /**
+     * Prepends a new node with the given value to the start of the list.
+     *
+     * @param value The value to be added to the list.
+     */
+    public void prepend(int value) {
+        // Create a link
         Node lk = new Node(value);
 
-        // point it to old first node
+        // Point it to old first node
         lk.next = head;
-        if(head == null){
-            tail=lk;
+        if (head == null) {
+            tail = lk;
         }
-        //point first to new first node
+        // Point first to new first node
         head = lk;
-
-
     }
-    public void  insertByIndex(int index, int value){
+
+    /**
+     * Inserts a new node with the given value at the specified index in the list.
+     *
+     * @param index The index where the new node should be inserted.
+     * @param value The value to be added to the list.
+     */
+    public void insertByIndex(int index, int value) {
         Node p = head;
         Node prev = head;
         Node lk = new Node(value);
-
         int counter = 0;
 
-        //start from the beginning
-        while(p != null ) {
-
-
-            if(index == 0){
+        // Start from the beginning
+        while (p != null) {
+            if (index == 0) {
                 lk.next = head;
                 head = lk;
                 return;
-            }
-            else if(counter == index ){
+            } else if (counter == index) {
                 lk.next = p;
-                prev.next =lk;
-               return;
+                prev.next = lk;
+                return;
             }
 
             counter++;
             prev = p;
             p = p.next;
         }
-        System.out.println(counter);
-        if(counter == index){
-            System.out.println(tail.data);
+
+        if (counter == index) {
             this.tail.next = lk;
             this.tail = lk;
-        }else {
-            System.out.println("List out Bound");
+        } else {
+            System.out.println("List out of bounds");
         }
     }
 
-    public void append(int value){
-        //create a link
+    /**
+     * Appends a new node with the given value to the end of the list.
+     *
+     * @param value The value to be added to the list.
+     */
+    public void append(int value) {
+        // Create a link
         Node lk = new Node(value);
-        // point the tail node not new node
-        tail.next=lk;
-        //point tail node to new node
+        // Point the tail node to the new node
+        if (tail != null) {
+            tail.next = lk;
+        }
+        // Point tail to new node
         tail = lk;
+        if (head == null) {
+            head = lk;
+        }
     }
 
-    public  void remove(int value){
+    /**
+     * Removes the first node with the specified value from the list.
+     *
+     * @param value The value of the node to be removed.
+     */
+    public void remove(int value) {
         Node p = head;
         Node prev = head;
-        
-        if(p.data == value){
+
+        if (p != null && p.data == value) {
             head = p.next;
             return;
         }
 
-        //start from the beginning
-        while(p != null ) {
-            if(p.data==value ){
+        // Start from the beginning
+        while (p != null) {
+            if (p.data == value) {
                 prev.next = p.next;
                 return;
             }
-            prev =p;
+            prev = p;
             p = p.next;
         }
     }
-    public boolean search(int value){
+
+    /**
+     * Searches for a node with the given value in the list.
+     *
+     * @param value The value to search for in the list.
+     * @return true if the value is found, false otherwise.
+     */
+    public boolean search(int value) {
         Node p = head;
-        //start from the beginning
-        while(p != null ) {
-            if(p.data==value){
+        // Start from the beginning
+        while (p != null) {
+            if (p.data == value) {
                 return true;
             }
             p = p.next;
@@ -133,17 +160,20 @@ public class ILinkedList {
         return false;
     }
 
-
+    /**
+     * Prints the elements of the list.
+     */
     public void printList() {
         Node p = head;
         System.out.print("\n[");
 
-        //start from the beginning
-        while(p != null) {
+        // Start from the beginning
+        while (p != null) {
             System.out.print(" " + p.data + " ");
             p = p.next;
         }
         System.out.print("]");
     }
+
 
 }
